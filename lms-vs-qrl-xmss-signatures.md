@@ -52,9 +52,9 @@ What is not in the record is a published comparison study weighing the two schem
 
 What follows from the choice is observable in the wallet: a tree fixed at creation, a count that starts at 1,024 and is shown to the user, and a signature that carries a path of ten hashes back to the root.
 
-The practical comparison for a user is not LMS versus XMSS in the abstract. It is whether the wallet tracks the key index correctly, whether backups preserve it, and whether the address is moved before its keys run out. https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/why-stateful-signatures-matter-in-qrl.md covers that shared obligation.
+The practical comparison for a user is not LMS versus XMSS in the abstract. It is whether the wallet tracks the key index correctly, whether backups preserve it, and whether the address is moved before its keys run out. [Why Stateful Signatures Matter in QRL](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/why-stateful-signatures-matter-in-qrl.md) covers that shared obligation.
 
-https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/how-qrl-xmss-signatures-work.md walks through the XMSS signature, https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/what-is-a-qrl-hash-based-signature.md covers the hash assumption, and https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/why-qrl-uses-a-merkle-tree.md explains the structure both families rely on. https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/qrl-security-audit-history.md covers the reviews of the implementation rather than the scheme.
+[How XMSS Signatures Work](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/how-qrl-xmss-signatures-work.md) walks through the XMSS signature, [What Is a Hash-Based Signature?](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/what-is-a-qrl-hash-based-signature.md) covers the hash assumption, and [Why QRL Uses a Merkle Tree](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/why-qrl-uses-a-merkle-tree.md) explains the structure both families rely on. [QRL Security Audit History](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/qrl-security-audit-history.md) covers the reviews of the implementation rather than the scheme.
 
 ## FAQ
 

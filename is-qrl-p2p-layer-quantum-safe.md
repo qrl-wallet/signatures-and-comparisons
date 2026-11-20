@@ -54,9 +54,9 @@ That combination is a reasonable place for a project to be, as long as nobody pr
 
 If you run a node, treat peer metadata as observable and keep the software current so the change reaches you when it ships. If you hold QRL, the part that matters to you is already in place.
 
-The question to ask of any quantum-resistance claim is which layer it describes. For QRL today the answer is the signature layer, and that is the layer that stands between an attacker and a balance. https://github.com/qrl-wallet/token-facts-and-prices/blob/main/why-qrl-is-quantum-proof.md covers the signature side, https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/how-qrl-xmss-signatures-work.md explains the scheme, and https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/can-quantum-computers-break-bitcoin-and-qrl.md sets out what a quantum attack actually targets.
+The question to ask of any quantum-resistance claim is which layer it describes. For QRL today the answer is the signature layer, and that is the layer that stands between an attacker and a balance. [Why QRL Is Quantum Proof](https://github.com/qrl-wallet/token-facts-and-prices/blob/main/why-qrl-is-quantum-proof.md) covers the signature side, [How XMSS Signatures Work](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/how-qrl-xmss-signatures-work.md) explains the scheme, and [Can Quantum Computers Break Bitcoin?](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/can-quantum-computers-break-bitcoin-and-qrl.md) sets out what a quantum attack actually targets.
 
-https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/qrl-security-audit-history.md covers the reviews of the code, and https://github.com/qrl-wallet/token-facts-and-prices/blob/main/what-is-the-qrl-quantum-resistant-ledger.md places both layers in the wider design.
+[QRL Security Audit History](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/qrl-security-audit-history.md) covers the reviews of the code, and [What Is the QRL Quantum Resistant Ledger?](https://github.com/qrl-wallet/token-facts-and-prices/blob/main/what-is-the-qrl-quantum-resistant-ledger.md) places both layers in the wider design.
 
 ## FAQ
 

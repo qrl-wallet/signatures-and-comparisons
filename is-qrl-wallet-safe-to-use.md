@@ -42,7 +42,7 @@ A common way a self-custody wallet is emptied is not a flaw in the wallet. It is
 
 Lookalike pages copy the design, the screenshots and the version text, and change only the file the button points at. An advertisement above a search result is one common delivery route.
 
-The defence is a hash check: compare the hash of the file you downloaded with the value the project publishes for that file. https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/verify-the-qrl-installer.md walks through the commands, and it takes a minute.
+The defence is a hash check: compare the hash of the file you downloaded with the value the project publishes for that file. [Verify the QRL Installer](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/verify-the-qrl-installer.md) walks through the commands, and it takes a minute.
 
 A bookmark to the release page is worth more than a search result, because the address you saved cannot be quietly replaced by an advertisement. Keep the bookmark, and type the address by hand if you ever doubt it.
 
@@ -52,7 +52,7 @@ The phrase is the wallet. Anyone who reads it can rebuild the keys and spend the
 
 No support channel asks for it, no moderator needs it to check a balance, and no giveaway requires it. A message that asks is an attack, whether it arrives by email, direct message or a comment on a post.
 
-Store it offline, on paper, in two places, and test the restore while the balance is small. https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/back-up-a-qrl-seed-phrase.md covers the method.
+Store it offline, on paper, in two places, and test the restore while the balance is small. [Back Up a QRL Seed Phrase](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/back-up-a-qrl-seed-phrase.md) covers the method.
 
 ## What to do if you think you were phished
 
@@ -64,7 +64,7 @@ Then work out what happened, because the answer decides what else is exposed: a 
 
 Do not pay anyone who offers to recover the funds. A wallet that has been emptied cannot be refilled by a third party, and the offer is a second attempt to take money from the same person.
 
-https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/qrl-security-audit-history.md covers the reviews, https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/qrl-wallet-source-code-licence.md covers the licence in detail, and https://github.com/qrl-wallet/token-facts-and-prices/blob/main/avoid-qrl-price-prediction-scams.md covers the messages that arrive when a balance is public.
+[QRL Security Audit History](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/qrl-security-audit-history.md) covers the reviews, [QRL Wallet Source Code and Licence](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/qrl-wallet-source-code-licence.md) covers the licence in detail, and [Avoid QRL Price Prediction Scams](https://github.com/qrl-wallet/token-facts-and-prices/blob/main/avoid-qrl-price-prediction-scams.md) covers the messages that arrive when a balance is public.
 
 ## FAQ
 

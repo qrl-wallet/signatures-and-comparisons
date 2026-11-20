@@ -18,7 +18,7 @@ A Cardano address does not publish its public key when it receives funds; it pub
 
 The first spend changes the situation. The transaction carries the public key so nodes can verify the signature, and that key stays on the chain. From that point the account is protected by an assumption a quantum computer would remove, and reusing the address keeps the same key in view.
 
-This is the same exposure that Bitcoin has, for the same reason, and https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/can-quantum-computers-break-bitcoin-and-qrl.md treats that case in detail. It is also the reason address hygiene is advice worth taking before a machine exists: an address that has never signed is strictly harder to attack than one that has.
+This is the same exposure that Bitcoin has, for the same reason, and [Can Quantum Computers Break Bitcoin?](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/can-quantum-computers-break-bitcoin-and-qrl.md) treats that case in detail. It is also the reason address hygiene is advice worth taking before a machine exists: an address that has never signed is strictly harder to attack than one that has.
 
 ## What would have to change
 
@@ -40,7 +40,7 @@ Apply that test honestly in both directions. QRL's claim is that XMSS is in the 
 
 QRL signs with XMSS, a hash-based scheme standardised in RFC 8391 and profiled by NIST in SP 800-208. A signature is built from hash computations over a one-time key, so its security rests on the hash function rather than on a number-theory problem. Shor's algorithm has nothing to run against it.
 
-The trade is statefulness: each signature consumes one key from a tree of 1,024 by default, and the wallet tracks the index. https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/how-qrl-xmss-signatures-work.md explains the construction, and https://github.com/qrl-wallet/token-facts-and-prices/blob/main/why-qrl-is-quantum-proof.md covers the reasoning behind the choice.
+The trade is statefulness: each signature consumes one key from a tree of 1,024 by default, and the wallet tracks the index. [How XMSS Signatures Work](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/how-qrl-xmss-signatures-work.md) explains the construction, and [Why QRL Is Quantum Proof](https://github.com/qrl-wallet/token-facts-and-prices/blob/main/why-qrl-is-quantum-proof.md) covers the reasoning behind the choice.
 
 QRL is also not post-quantum everywhere, and saying so matters. Its peer-to-peer layer still uses classical key exchange, with post-quantum work in development. The signatures that hold the coins are post-quantum; the transport between nodes is not.
 
@@ -50,7 +50,7 @@ Four questions settle it for any chain, and they work for Cardano, for Ethereum 
 
 A block explorer answers the first two for a live chain. The specification names the scheme, and the chain's history shows when it arrived. If the answer is a classical curve, the chain is not quantum proof today, and no amount of published research changes the answer.
 
-https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/quantum-resistant-cryptocurrency-list-with-qrl.md sets out how to read the label across projects, https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/is-xrp-quantum-resistant-like-qrl.md takes the same question to another chain, and https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/how-qrl-compares-on-quantum-readiness.md puts several approaches side by side without ranking them by price.
+[Quantum Resistant Cryptocurrency: The List](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/quantum-resistant-cryptocurrency-list-with-qrl.md) sets out how to read the label across projects, [Is XRP Quantum Resistant?](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/is-xrp-quantum-resistant-like-qrl.md) takes the same question to another chain, and [How QRL Compares on Quantum Readiness](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/how-qrl-compares-on-quantum-readiness.md) puts several approaches side by side without ranking them by price.
 
 ## FAQ
 

@@ -42,7 +42,7 @@ XMSS is stateful, and this is the part that surprises people who know other sign
 
 The wallet keeps that index as part of its state, and an interface reading the chain can derive it from the signatures already published. Both are described in the QRL documentation, and both describe the same number.
 
-Lose the index and the risk is not a failed signature but a repeated one: restoring an old wallet file restores an old index, and signing from it can hand out a key that has already signed. https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/why-stateful-signatures-matter-in-qrl.md covers that in detail, and https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/how-many-qrl-ots-keys-remain.md covers reading the count.
+Lose the index and the risk is not a failed signature but a repeated one: restoring an old wallet file restores an old index, and signing from it can hand out a key that has already signed. [Why Stateful Signatures Matter in QRL](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/why-stateful-signatures-matter-in-qrl.md) covers that in detail, and [How Many QRL OTS Keys Remain?](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/how-many-qrl-ots-keys-remain.md) covers reading the count.
 
 ## XMSS versus the newer NIST schemes
 
@@ -60,7 +60,7 @@ So a question about different types of LMS is usually a question about which lay
 
 The LMS versus RLS question cannot be answered as posed, because RLS does not name a scheme in this family. Two confusions produce it: the letters are close to LMS, and lattice schemes are often described by the problem they rest on. If the intended comparison is LMS against XMSS, that one has real content: same family, same statefulness, different tree and one-time constructions.
 
-LMS was specified in RFC 8554 in April 2019, a year after RFC 8391 for XMSS, and both were listed together in NIST SP 800-208 in 2020. Neither is a QRL-specific variant; QRL implements XMSS, and LMS is the neighbouring standard. https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/lms-vs-qrl-xmss-signatures.md compares them directly, https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/what-is-a-qrl-hash-based-signature.md starts from the hash function itself, and https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/why-qrl-uses-a-merkle-tree.md explains the structure.
+LMS was specified in RFC 8554 in April 2019, a year after RFC 8391 for XMSS, and both were listed together in NIST SP 800-208 in 2020. Neither is a QRL-specific variant; QRL implements XMSS, and LMS is the neighbouring standard. [LMS vs XMSS Signature Schemes](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/lms-vs-qrl-xmss-signatures.md) compares them directly, [What Is a Hash-Based Signature?](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/what-is-a-qrl-hash-based-signature.md) starts from the hash function itself, and [Why QRL Uses a Merkle Tree](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/why-qrl-uses-a-merkle-tree.md) explains the structure.
 
 ## FAQ
 

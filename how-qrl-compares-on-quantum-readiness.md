@@ -16,9 +16,9 @@ Every project below is assessed on those four, and nothing else. Market size, pr
 
 QRL signs with XMSS, a hash-based scheme standardised in RFC 8391 and profiled by NIST in SP 800-208. The scheme has been the one on the wire since the network's first block in 2018, not a migration in progress.
 
-The consequence is statefulness: each address has a finite number of one-time keys, 1,024 at the default tree height, and the wallet tracks the index and shows the remaining count. That is an unusual operational requirement and it is documented rather than hidden. https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/how-qrl-xmss-signatures-work.md explains the construction.
+The consequence is statefulness: each address has a finite number of one-time keys, 1,024 at the default tree height, and the wallet tracks the index and shows the remaining count. That is an unusual operational requirement and it is documented rather than hidden. [How XMSS Signatures Work](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/how-qrl-xmss-signatures-work.md) explains the construction.
 
-QRL's transport layer is still classical, with post-quantum key establishment in development. Its cryptography has been reviewed by external firms in 2018 and again in 2026, and the audits' scope is what the claim rests on. https://github.com/qrl-wallet/token-facts-and-prices/blob/main/why-qrl-is-quantum-proof.md covers the reasoning behind the scheme choice.
+QRL's transport layer is still classical, with post-quantum key establishment in development. Its cryptography has been reviewed by external firms in 2018 and again in 2026, and the audits' scope is what the claim rests on. [Why QRL Is Quantum Proof](https://github.com/qrl-wallet/token-facts-and-prices/blob/main/why-qrl-is-quantum-proof.md) covers the reasoning behind the scheme choice.
 
 ## Other approaches, described as far as they are sourced
 
@@ -44,7 +44,7 @@ What is true is that QRL is a proof-of-work chain, as several older networks are
 
 For any project, find the specification that names the scheme, then find a transaction that uses it. A block explorer shows the signature format of a real transaction, and that is stronger evidence than a comparison table.
 
-Then check the date the scheme entered the signing path, the transport's cryptography, and the audits. https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/quantum-resistant-cryptocurrency-list-with-qrl.md sets out the four checks in detail, https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/is-xrp-quantum-resistant-like-qrl.md applies them to one chain, and https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/what-makes-qrl-wallet-quantum-safe.md applies them to a wallet rather than a network.
+Then check the date the scheme entered the signing path, the transport's cryptography, and the audits. [Quantum Resistant Cryptocurrency: The List](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/quantum-resistant-cryptocurrency-list-with-qrl.md) sets out the four checks in detail, [Is XRP Quantum Resistant?](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/is-xrp-quantum-resistant-like-qrl.md) applies them to one chain, and [What Makes a Wallet Quantum Safe?](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/what-makes-qrl-wallet-quantum-safe.md) applies them to a wallet rather than a network.
 
 ## FAQ
 

@@ -10,7 +10,7 @@ The wallet costs nothing. It is published on the project's GitHub releases page 
 
 That is worth stating because the phrase "quantum wallet" attracts products that charge for the label. A wallet is a program that holds keys and signs transactions; the cryptography is either in the signatures or it is not, and a price does not change which.
 
-If a site sells you a QRL wallet, you are buying something other than the release. The project publishes the client itself, and https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/download-the-official-qrl-wallet.md covers where the file comes from and how to check it before you run it.
+If a site sells you a QRL wallet, you are buying something other than the release. The project publishes the client itself, and [Download the Official QRL Wallet](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/download-the-official-qrl-wallet.md) covers where the file comes from and how to check it before you run it.
 
 ## The computer
 
@@ -26,7 +26,7 @@ There is also no infrastructure to rent. The wallet connects to a public node ra
 
 A Ledger device is optional. It lets the wallet sign with a key that stays on the hardware, which answers a different threat from the one the signature scheme answers: theft and malware on the computer.
 
-The QRL application on the device is what makes that possible, and https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/pair-ledger-nano-with-qrl.md covers the pairing. Prices for hardware change constantly and vary by region, so this page does not quote one; check the vendor's own listing at the moment you decide.
+The QRL application on the device is what makes that possible, and [Pair Ledger Nano With QRL](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/pair-ledger-nano-with-qrl.md) covers the pairing. Prices for hardware change constantly and vary by region, so this page does not quote one; check the vendor's own listing at the moment you decide.
 
 What a device does not buy is quantum resistance. It holds a classical or post-quantum key depending on the scheme the chain uses, and QRL's is post-quantum whether the key lives on a device or in a file.
 
@@ -34,7 +34,7 @@ What a device does not buy is quantum resistance. It holds a classical or post-q
 
 Every QRL transaction carries a fee, paid in QRL, calculated in the smallest unit. The protocol enforces a minimum, and the lower bound nodes accept moves with the network, so the number is not fixed forever.
 
-The fee is small in absolute terms, and it is charged per transaction rather than per wallet or per year. Across a year of ordinary use, fees are likely to be the smallest line on the list, and the one you can see before you send. https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/understanding-qrl-transaction-fees.md explains how the field works in the send form and what happens when a fee is set too low.
+The fee is small in absolute terms, and it is charged per transaction rather than per wallet or per year. Across a year of ordinary use, fees are likely to be the smallest line on the list, and the one you can see before you send. [Understanding QRL Transaction Fees](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/understanding-qrl-transaction-fees.md) explains how the field works in the send form and what happens when a fee is set too low.
 
 One consequence matters for cost planning: a QRL address has a finite number of signatures, so a balance kept for years eventually needs a move to a fresh address. That move is one more transaction, which means one more fee, and it is worth counting before the last key rather than after.
 
@@ -50,7 +50,7 @@ The trade QRL makes is the opposite one. You keep the keys, you keep the respons
 
 The expensive mistakes are not licence fees. They are a phrase photographed and stored in a cloud drive, a download taken from an advertisement, a wallet file on a machine that anyone can log into, or an address whose keys were spent to the last one.
 
-Each of those costs the whole balance rather than a fee. The defences are free: verify the download, write the phrase on paper, keep two copies in two places, and watch the key count. https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/is-qrl-wallet-safe-to-use.md sets out the habits, and https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/what-makes-qrl-wallet-quantum-safe.md explains what the wallet's design does and does not cover.
+Each of those costs the whole balance rather than a fee. The defences are free: verify the download, write the phrase on paper, keep two copies in two places, and watch the key count. [Is the QRL Wallet Safe to Use?](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/is-qrl-wallet-safe-to-use.md) sets out the habits, and [What Makes a Wallet Quantum Safe?](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/what-makes-qrl-wallet-quantum-safe.md) explains what the wallet's design does and does not cover.
 
 ## FAQ
 

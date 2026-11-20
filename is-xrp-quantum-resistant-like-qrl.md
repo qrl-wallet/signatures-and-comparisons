@@ -26,15 +26,15 @@ Post-quantum cryptography is discussed in most serious blockchain communities, a
 
 The distinction is worth holding firmly. A paper, a proposal or a statement of intent is a plan about a future software version. The signing path is what validators enforce now. Until a post-quantum scheme appears in the transaction format and is accepted by the network, the ledger remains classical regardless of what has been published about it.
 
-That standard should be applied to every project, including this one. https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/quantum-resistant-cryptocurrency-list-with-qrl.md sets out the four checks that separate a deployment from an announcement.
+That standard should be applied to every project, including this one. [Quantum Resistant Cryptocurrency: The List](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/quantum-resistant-cryptocurrency-list-with-qrl.md) sets out the four checks that separate a deployment from an announcement.
 
 ## How QRL differs
 
 QRL signs with XMSS, a hash-based scheme standardised in RFC 8391 and profiled by NIST in SP 800-208. The signature is built from hash computations over a one-time key, so its security rests on the hash function rather than on a number-theory problem. Shor's algorithm has nothing to run against.
 
-The scheme has been in the signing path since QRL's first block in 2018, which means it is not a migration in progress. The cost is statefulness: each signature consumes one key from a tree of 1,024 by default, and the wallet tracks the index. https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/how-qrl-xmss-signatures-work.md explains the construction and https://github.com/qrl-wallet/token-facts-and-prices/blob/main/why-qrl-is-quantum-proof.md covers the reasoning.
+The scheme has been in the signing path since QRL's first block in 2018, which means it is not a migration in progress. The cost is statefulness: each signature consumes one key from a tree of 1,024 by default, and the wallet tracks the index. [How XMSS Signatures Work](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/how-qrl-xmss-signatures-work.md) explains the construction and [Why QRL Is Quantum Proof](https://github.com/qrl-wallet/token-facts-and-prices/blob/main/why-qrl-is-quantum-proof.md) covers the reasoning.
 
-There is one boundary to state plainly. QRL's peer-to-peer layer still uses classical key exchange, with post-quantum work in development. The signatures that hold the coins are post-quantum; the transport between nodes is not. https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/can-quantum-computers-break-bitcoin-and-qrl.md explains why that separation matters when you assess a whole network.
+There is one boundary to state plainly. QRL's peer-to-peer layer still uses classical key exchange, with post-quantum work in development. The signatures that hold the coins are post-quantum; the transport between nodes is not. [Can Quantum Computers Break Bitcoin?](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/can-quantum-computers-break-bitcoin-and-qrl.md) explains why that separation matters when you assess a whole network.
 
 ## What to check before believing a claim
 
@@ -42,7 +42,7 @@ For any chain, ask what a transaction is signed with and find the answer in a sp
 
 You can do the second check from a block explorer. A live transaction shows its signature format. If the format is elliptic-curve, the chain is classical today, whatever has been said about tomorrow.
 
-QRL is not the right answer for everyone, and the comparison here is deliberately narrow: one scheme against another, on the single question of what happens to signatures if a large quantum computer exists. https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/how-qrl-compares-on-quantum-readiness.md extends that comparison to other projects, and https://github.com/qrl-wallet/token-facts-and-prices/blob/main/is-qrl-the-same-as-xrp.md deals with the confusion that the two tickers are similar.
+QRL is not the right answer for everyone, and the comparison here is deliberately narrow: one scheme against another, on the single question of what happens to signatures if a large quantum computer exists. [How QRL Compares on Quantum Readiness](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/how-qrl-compares-on-quantum-readiness.md) extends that comparison to other projects, and [Is QRL the Same as XRP?](https://github.com/qrl-wallet/token-facts-and-prices/blob/main/is-qrl-the-same-as-xrp.md) deals with the confusion that the two tickers are similar.
 
 ## FAQ
 

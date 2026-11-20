@@ -18,7 +18,7 @@ An account's public key is not on the chain until the account sends something. A
 
 The first outgoing transaction publishes the key, and it stays published. From that moment the account's security rests on the difficulty of deriving a private key from a public one, which is the assumption a quantum machine would remove. An account that keeps receiving at the same address after spending is the most exposed shape: the key is public and the balance sits behind it.
 
-This is why the practical advice for Ethereum holders is the same as for Bitcoin holders. Use fresh addresses, and treat a key that has signed as public. https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/can-quantum-computers-break-bitcoin-and-qrl.md explains the mechanism in full.
+This is why the practical advice for Ethereum holders is the same as for Bitcoin holders. Use fresh addresses, and treat a key that has signed as public. [Can Quantum Computers Break Bitcoin?](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/can-quantum-computers-break-bitcoin-and-qrl.md) explains the mechanism in full.
 
 ## What is proposed
 
@@ -34,7 +34,7 @@ That does not make Ethereum unusual. It describes the position most large networ
 
 QRL signs with XMSS, a hash-based scheme standardised in RFC 8391 and profiled by NIST in SP 800-208. The signature is built from hash computations over a one-time key, so its security rests on the hash function rather than on a number-theory problem. Shor's algorithm has nothing to attack.
 
-It has been the signing scheme since QRL's first block in 2018, which is the part that distinguishes a property from an intention. The cost is statefulness: every signature consumes one key from a tree of 1,024 by default, and the wallet tracks which comes next. https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/how-qrl-xmss-signatures-work.md explains the construction and https://github.com/qrl-wallet/token-facts-and-prices/blob/main/why-qrl-is-quantum-proof.md covers the reasoning.
+It has been the signing scheme since QRL's first block in 2018, which is the part that distinguishes a property from an intention. The cost is statefulness: every signature consumes one key from a tree of 1,024 by default, and the wallet tracks which comes next. [How XMSS Signatures Work](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/how-qrl-xmss-signatures-work.md) explains the construction and [Why QRL Is Quantum Proof](https://github.com/qrl-wallet/token-facts-and-prices/blob/main/why-qrl-is-quantum-proof.md) covers the reasoning.
 
 The boundary is worth stating. QRL's peer-to-peer transport is still classical, with post-quantum key establishment in development. The signatures are post-quantum; the transport is not.
 
@@ -42,9 +42,9 @@ The boundary is worth stating. QRL's peer-to-peer transport is still classical, 
 
 For an Ethereum balance, the steps that help today are the ones that limit how long a key stays exposed: use a fresh address rather than reusing one, and avoid holding a large balance behind a key that has already signed many times.
 
-For a balance held for years, the deeper question is which scheme protects it. https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/what-makes-qrl-wallet-quantum-safe.md sets out what has to be true for a wallet to earn that label, and https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/quantum-resistant-cryptocurrency-list-with-qrl.md separates projects whose signatures are post-quantum from those still discussing it.
+For a balance held for years, the deeper question is which scheme protects it. [What Makes a Wallet Quantum Safe?](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/what-makes-qrl-wallet-quantum-safe.md) sets out what has to be true for a wallet to earn that label, and [Quantum Resistant Cryptocurrency: The List](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/quantum-resistant-cryptocurrency-list-with-qrl.md) separates projects whose signatures are post-quantum from those still discussing it.
 
-https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/how-qrl-compares-on-quantum-readiness.md places QRL beside other approaches without ranking them by market size, because market size is not a cryptographic property.
+[How QRL Compares on Quantum Readiness](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/how-qrl-compares-on-quantum-readiness.md) places QRL beside other approaches without ranking them by market size, because market size is not a cryptographic property.
 
 ## FAQ
 
