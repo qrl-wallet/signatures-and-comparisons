@@ -18,17 +18,17 @@ QRL signs every transaction with XMSS, a hash-based scheme standardised in RFC 8
 
 That matters for two reasons. A scheme that has secured real balances for years has been tested against real use, including the operational discipline that stateful keys demand. And a scheme that is already live cannot be quietly postponed, which is the failure mode of a project that announces post-quantum work without shipping it.
 
-The trade QRL accepted is statefulness: each signature consumes one key from a finite tree, 1,024 by default. https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/how-qrl-xmss-signatures-work.md explains the construction, and https://github.com/qrl-wallet/token-facts-and-prices/blob/main/why-qrl-is-quantum-proof.md sets out why the choice was made.
+The trade QRL accepted is statefulness: each signature consumes one key from a finite tree, 1,024 by default. [How XMSS Signatures Work](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/how-qrl-xmss-signatures-work.md) explains the construction, and [Why QRL Is Quantum Proof](https://github.com/qrl-wallet/token-facts-and-prices/blob/main/why-qrl-is-quantum-proof.md) sets out why the choice was made.
 
 ## What the label does not cover
 
-Even a chain with post-quantum signatures is not post-quantum everywhere. The peer-to-peer layer, the node identity and the transport between machines are separate from the signing scheme, and a project can be strong in one and classical in the other. https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/is-qrl-p2p-layer-quantum-safe.md treats that boundary honestly for QRL, where key establishment is still classical and post-quantum work is in development.
+Even a chain with post-quantum signatures is not post-quantum everywhere. The peer-to-peer layer, the node identity and the transport between machines are separate from the signing scheme, and a project can be strong in one and classical in the other. [Is the QRL P2P Layer Quantum Safe?](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/is-qrl-p2p-layer-quantum-safe.md) treats that boundary honestly for QRL, where key establishment is still classical and post-quantum work is in development.
 
-The same caution applies to wallets. A wallet that stores classical keys offline is protected against a thief, not against a future cryptanalytic capability. Offline storage and post-quantum signing answer different threats, and https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/what-makes-qrl-wallet-quantum-safe.md separates the two.
+The same caution applies to wallets. A wallet that stores classical keys offline is protected against a thief, not against a future cryptanalytic capability. Offline storage and post-quantum signing answer different threats, and [What Makes a Wallet Quantum Safe?](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/what-makes-qrl-wallet-quantum-safe.md) separates the two.
 
 ## Other projects and what they actually run
 
-Most major chains sign with classical elliptic-curve schemes today. That is not a criticism; it is the state of the software, and it is why the question is interesting. https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/is-xrp-quantum-resistant-like-qrl.md, https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/is-cardano-quantum-proof-like-qrl.md and https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/ethereum-quantum-resistance-and-qrl.md each take one chain and ask what it signs with, rather than what it has said.
+Most major chains sign with classical elliptic-curve schemes today. That is not a criticism; it is the state of the software, and it is why the question is interesting. [Is XRP Quantum Resistant?](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/is-xrp-quantum-resistant-like-qrl.md), [Is Cardano Quantum Proof?](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/is-cardano-quantum-proof-like-qrl.md) and [Is Ethereum Quantum Resistant?](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/ethereum-quantum-resistance-and-qrl.md) each take one chain and ask what it signs with, rather than what it has said.
 
 Where a project has announced post-quantum work, the honest description is exactly that: announced. A proposal, a research paper or a conference talk is a lead, not a deployment. You can check the deployment claim the same way for anyone: find the transaction format, find the signature scheme named in the code or the specification, and confirm that the scheme in the specification is the one the network accepts.
 
@@ -46,7 +46,7 @@ A project that can answer those five questions has earned the label. A project t
 
 ## Where QRL sits on the list
 
-QRL is a proof-of-work chain whose signatures have been post-quantum since launch, with a stateful key model the wallet manages and a documented count of remaining signatures. https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/how-qrl-compares-on-quantum-readiness.md puts that beside other projects that approach the same goal from different designs, and its cryptography has been reviewed by external firms in 2018 and again in 2026.
+QRL is a proof-of-work chain whose signatures have been post-quantum since launch, with a stateful key model the wallet manages and a documented count of remaining signatures. [How QRL Compares on Quantum Readiness](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/how-qrl-compares-on-quantum-readiness.md) puts that beside other projects that approach the same goal from different designs, and its cryptography has been reviewed by external firms in 2018 and again in 2026.
 
 That is a narrower claim than "quantum proof" and a more useful one. The signature scheme is the part that holds the coins, and it is the part you can check.
 

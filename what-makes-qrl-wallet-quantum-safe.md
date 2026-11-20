@@ -24,7 +24,7 @@ QRL signs with XMSS, standardised in RFC 8391 and profiled by NIST in SP 800-208
 
 Shor's algorithm has nothing to attack in that construction, because there is no hidden subgroup to find. Grover's algorithm gives a quadratic speedup for search, which is why hash lengths are chosen with margin, and that is a margin question rather than a break.
 
-https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/how-qrl-xmss-signatures-work.md covers the mechanics, and https://github.com/qrl-wallet/token-facts-and-prices/blob/main/why-qrl-is-quantum-proof.md covers why the project chose this scheme over a lattice-based alternative.
+[How XMSS Signatures Work](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/how-qrl-xmss-signatures-work.md) covers the mechanics, and [Why QRL Is Quantum Proof](https://github.com/qrl-wallet/token-facts-and-prices/blob/main/why-qrl-is-quantum-proof.md) covers why the project chose this scheme over a lattice-based alternative.
 
 ## Key handling and the index
 
@@ -32,7 +32,7 @@ The wallet creates keys on your machine, encrypts them in a wallet file with a p
 
 The index is the part that makes QRL's wallet different from most. Each address has 1,024 signatures at the default tree height, and the index records which key comes next. Signing twice with the same index would expose the private material for that leaf, so the network rejects a repeated signature and the wallet tracks the count.
 
-That is a real operational requirement, and https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/how-many-qrl-ots-keys-remain.md explains how to read the count. A wallet is quantum safe only if it also handles this correctly; choosing the scheme does not by itself deliver the behaviour.
+That is a real operational requirement, and [How Many QRL OTS Keys Remain?](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/how-many-qrl-ots-keys-remain.md) explains how to read the count. A wallet is quantum safe only if it also handles this correctly; choosing the scheme does not by itself deliver the behaviour.
 
 ## Backup, and what it has to contain
 
@@ -40,7 +40,7 @@ The mnemonic rebuilds the seed and therefore every address the wallet ever deriv
 
 So the backup has two parts with different behaviour: the phrase, which is durable and reusable, and the index, which is positional. That is why restoring a backup to a second machine while the first is still in use is dangerous rather than convenient, and why a restored old file is best treated as a wallet to empty into a fresh address.
 
-https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/is-qrl-wallet-safe-to-use.md covers the download and phishing side of safety, which sits beside this and is not replaced by it.
+[Is the QRL Wallet Safe to Use?](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/is-qrl-wallet-safe-to-use.md) covers the download and phishing side of safety, which sits beside this and is not replaced by it.
 
 ## What the label does not cover
 
@@ -56,7 +56,7 @@ Ask what scheme signs a transaction, and find it in the specification rather tha
 
 A project that answers all five has earned the label. A project that answers with the label has not, and the questions are cheap to ask.
 
-https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/quantum-resistant-cryptocurrency-list-with-qrl.md applies that test across projects, and https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/are-qrl-wallets-expensive.md covers what the software costs, which is nothing.
+[Quantum Resistant Cryptocurrency: The List](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/quantum-resistant-cryptocurrency-list-with-qrl.md) applies that test across projects, and [Are Quantum Wallets Expensive?](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/are-qrl-wallets-expensive.md) covers what the software costs, which is nothing.
 
 ## FAQ
 

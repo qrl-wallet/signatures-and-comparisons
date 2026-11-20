@@ -18,11 +18,11 @@ What they are not is a diagnosis. The same symptom has several causes, and a rep
 
 Three confusions come up often enough to be worth naming.
 
-The first is the theory that QRL is connected to a proposed global financial reset. It is not: QRL is an independent open-source blockchain, and the resemblance between the acronym and the theory's name is a coincidence that has been repeated into a rumour. https://github.com/qrl-wallet/token-facts-and-prices/blob/main/is-qrl-connected-to-the-qfs-theory.md treats it in full.
+The first is the theory that QRL is connected to a proposed global financial reset. It is not: QRL is an independent open-source blockchain, and the resemblance between the acronym and the theory's name is a coincidence that has been repeated into a rumour. [Is QRL Connected to the QFS Theory?](https://github.com/qrl-wallet/token-facts-and-prices/blob/main/is-qrl-connected-to-the-qfs-theory.md) treats it in full.
 
-The second is the claim that the project has stopped work. It has not. Releases are published, the repository shows activity, and the wallet's current build is newer than most of the threads asserting otherwise. https://github.com/qrl-wallet/token-facts-and-prices/blob/main/is-the-qrl-project-still-active.md covers the evidence.
+The second is the claim that the project has stopped work. It has not. Releases are published, the repository shows activity, and the wallet's current build is newer than most of the threads asserting otherwise. [Is the QRL Project Still Active?](https://github.com/qrl-wallet/token-facts-and-prices/blob/main/is-the-qrl-project-still-active.md) covers the evidence.
 
-The third is the one-time key limit, usually stated as "the wallet only works 1,024 times". That is close to true and misses the important part: the limit belongs to an address, not to the wallet, and receiving does not consume a key. https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/how-many-qrl-ots-keys-remain.md explains the count, and https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/move-qrl-before-keys-run-out.md covers what to do as it runs out.
+The third is the one-time key limit, usually stated as "the wallet only works 1,024 times". That is close to true and misses the important part: the limit belongs to an address, not to the wallet, and receiving does not consume a key. [How Many QRL OTS Keys Remain?](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/how-many-qrl-ots-keys-remain.md) explains the count, and [Move QRL Before Keys Run Out](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/move-qrl-before-keys-run-out.md) covers what to do as it runs out.
 
 ## The questions that come up most
 
@@ -30,7 +30,7 @@ Supply is asked constantly, usually with a number attached that nobody can sourc
 
 Price is asked more than anything else, and no forum has ever answered it. A thread predicting a price is a thread about the poster's position, not about the asset. The same applies to charts: a screenshot of a candle is not data about the asset.
 
-Recovery is the third. Someone has lost a phrase, or a file, and asks whether the coins can be recovered. The answer is the same every time: without the phrase or the file, nobody can help, and anyone offering to is a thief. https://github.com/qrl-wallet/token-facts-and-prices/blob/main/qrl-token-supply-explained.md covers supply properly, and https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/is-qrl-wallet-safe-to-use.md covers the recovery boundary.
+Recovery is the third. Someone has lost a phrase, or a file, and asks whether the coins can be recovered. The answer is the same every time: without the phrase or the file, nobody can help, and anyone offering to is a thief. [QRL Token Supply Explained](https://github.com/qrl-wallet/token-facts-and-prices/blob/main/qrl-token-supply-explained.md) covers supply properly, and [Is the QRL Wallet Safe to Use?](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/is-qrl-wallet-safe-to-use.md) covers the recovery boundary.
 
 ## How to check a claim
 

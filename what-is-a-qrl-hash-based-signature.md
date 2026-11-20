@@ -30,7 +30,7 @@ Both constructions share a weakness that is not a bug to be fixed but a property
 
 So hash-based signatures are one-time by nature. The fix is not a better key but more keys, which is what a Merkle tree provides: many one-time keys committed to by one public value.
 
-That is also why the scheme is stateful. The signer has to know which keys are spent, and a wallet that forgets can be pushed into signing twice. https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/why-stateful-signatures-matter-in-qrl.md covers what that means in practice.
+That is also why the scheme is stateful. The signer has to know which keys are spent, and a wallet that forgets can be pushed into signing twice. [Why Stateful Signatures Matter in QRL](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/why-stateful-signatures-matter-in-qrl.md) covers what that means in practice.
 
 ## Sizes and costs
 
@@ -48,7 +48,7 @@ QRL signs transactions with XMSS, a standardised hash-based scheme built from a 
 
 The rest of the wallet is ordinary software around that: a local file, a password, a seed phrase. What changes is the signature under the transaction and the discipline around the key index.
 
-https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/how-qrl-xmss-signatures-work.md walks through a signature end to end, https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/why-qrl-uses-a-merkle-tree.md explains the structure that makes many keys usable under one address, and https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/can-quantum-computers-break-bitcoin-and-qrl.md covers the threat model the choice answers. https://github.com/qrl-wallet/token-facts-and-prices/blob/main/what-is-the-qrl-quantum-resistant-ledger.md places the scheme in the wider project.
+[How XMSS Signatures Work](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/how-qrl-xmss-signatures-work.md) walks through a signature end to end, [Why QRL Uses a Merkle Tree](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/why-qrl-uses-a-merkle-tree.md) explains the structure that makes many keys usable under one address, and [Can Quantum Computers Break Bitcoin?](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/can-quantum-computers-break-bitcoin-and-qrl.md) covers the threat model the choice answers. [What Is the QRL Quantum Resistant Ledger?](https://github.com/qrl-wallet/token-facts-and-prices/blob/main/what-is-the-qrl-quantum-resistant-ledger.md) places the scheme in the wider project.
 
 ## FAQ
 

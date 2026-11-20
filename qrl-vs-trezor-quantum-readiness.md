@@ -24,7 +24,7 @@ Hardware also has its own exposure: supply chain, firmware, the screen you trust
 
 QRL is not among the assets a Trezor device signs for, and Trezor's own supported-coins page says so plainly: it lists the Quantum Resistant Ledger as not supported. There is no QRL application for that hardware, so the device cannot hold a QRL key or approve a QRL transaction.
 
-The route for hardware-held QRL is a Ledger device with the QRL application installed. The desktop wallet drives the device, the device shows enough of the transaction to approve, and the signature comes back without the key leaving the hardware. https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/pair-ledger-nano-with-qrl.md covers the pairing, including the initialisation step a new device needs.
+The route for hardware-held QRL is a Ledger device with the QRL application installed. The desktop wallet drives the device, the device shows enough of the transaction to approve, and the signature comes back without the key leaving the hardware. [Pair Ledger Nano With QRL](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/pair-ledger-nano-with-qrl.md) covers the pairing, including the initialisation step a new device needs.
 
 That combination is the closest thing to both properties at once: a key that never touches the computer, and a signature scheme that is not elliptic-curve. It is not a claim that the setup removes every risk, only that the two protections are separate and this route has both. What remains is the usual hardware exposure: firmware, the supply chain, and the screen you trust to show the right address.
 
@@ -36,7 +36,7 @@ Most holders have both concerns, and the honest answer is that they need both pr
 
 If you do not yet hold QRL, the order matters. Set up the wallet and back up the phrase first, then pair the device, because a device that fails without a backup is still a wallet lost.
 
-https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/what-makes-qrl-wallet-quantum-safe.md sets out what has to be true for a wallet to earn the quantum-safe label, and https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/is-qrl-wallet-safe-to-use.md places the download and phishing risks beside the cryptographic ones. https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/quantum-resistant-cryptocurrency-list-with-qrl.md covers how to read the claim across projects, and https://github.com/qrl-wallet/token-facts-and-prices/blob/main/why-qrl-is-quantum-proof.md explains the scheme QRL chose.
+[What Makes a Wallet Quantum Safe?](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/what-makes-qrl-wallet-quantum-safe.md) sets out what has to be true for a wallet to earn the quantum-safe label, and [Is the QRL Wallet Safe to Use?](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/is-qrl-wallet-safe-to-use.md) places the download and phishing risks beside the cryptographic ones. [Quantum Resistant Cryptocurrency: The List](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/quantum-resistant-cryptocurrency-list-with-qrl.md) covers how to read the claim across projects, and [Why QRL Is Quantum Proof](https://github.com/qrl-wallet/token-facts-and-prices/blob/main/why-qrl-is-quantum-proof.md) explains the scheme QRL chose.
 
 ## The boundary, stated plainly
 

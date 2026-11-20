@@ -42,7 +42,7 @@ What a review cannot do either is keep watching. A project can be reviewed once 
 
 What a review does give you is evidence that someone qualified read the code with an adversarial eye and wrote down what they found. That is worth having, and it is a different thing from a promise about the future.
 
-https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/is-qrl-wallet-safe-to-use.md puts the reviews in the context of the risks a user actually faces, and https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/is-qrl-p2p-layer-quantum-safe.md covers the part of the protocol that is still being strengthened.
+[Is the QRL Wallet Safe to Use?](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/is-qrl-wallet-safe-to-use.md) puts the reviews in the context of the risks a user actually faces, and [Is the QRL P2P Layer Quantum Safe?](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/is-qrl-p2p-layer-quantum-safe.md) covers the part of the protocol that is still being strengthened.
 
 ## Where the reports are
 
@@ -52,7 +52,7 @@ If you want to go further, read the scope section of each report and compare it 
 
 The date on a report is part of the finding. A 2018 report on a 2026 build describes history rather than the software you are running.
 
-https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/how-qrl-xmss-signatures-work.md covers the scheme the reviews examined, https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/qrl-wallet-source-code-licence.md covers the code being public in the first place, and https://github.com/qrl-wallet/token-facts-and-prices/blob/main/is-the-qrl-project-still-active.md covers the project's continued maintenance.
+[How XMSS Signatures Work](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/how-qrl-xmss-signatures-work.md) covers the scheme the reviews examined, [QRL Wallet Source Code and Licence](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/qrl-wallet-source-code-licence.md) covers the code being public in the first place, and [Is the QRL Project Still Active?](https://github.com/qrl-wallet/token-facts-and-prices/blob/main/is-the-qrl-project-still-active.md) covers the project's continued maintenance.
 
 ## FAQ
 

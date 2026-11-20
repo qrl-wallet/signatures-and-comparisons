@@ -22,7 +22,7 @@ The issue tracker is part of that picture. Bugs that were reported and fixed, an
 
 The releases page is where the builds come from, and each asset is named for its platform and architecture. The build you install and the source you read should be the same version; a source tree from one release does not describe a binary from another.
 
-The project states that releases publish SHA-256 checksums and GPG signatures. The latest release's asset list does not include a separate checksum file, so the value to compare against is the one published alongside the release, as https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/verify-the-qrl-installer.md describes.
+The project states that releases publish SHA-256 checksums and GPG signatures. The latest release's asset list does not include a separate checksum file, so the value to compare against is the one published alongside the release; [Verify the QRL Installer](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/verify-the-qrl-installer.md) describes the comparison.
 
 ## Building it yourself
 
@@ -34,7 +34,7 @@ The practical version of this is a toolchain, the source at the matching tag, an
 
 What a self-built copy gives you is independence from the download path: no lookalike page, no substituted file, no trust in a mirror. What it does not give you is a second opinion on the code, which is what a review provides.
 
-https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/run-qrl-wallet-on-linux.md covers the platform where building from source is most common, and https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/qrl-security-audit-history.md covers the reviews of the code itself.
+[Run QRL Wallet on Linux](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/run-qrl-wallet-on-linux.md) covers the platform where building from source is most common, and [QRL Security Audit History](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/qrl-security-audit-history.md) covers the reviews of the code itself.
 
 ## What MIT permits
 
@@ -54,7 +54,7 @@ That process has parts: the code is public, the licence permits reading and rebu
 
 None of it removes the need for care. A reviewed, MIT-licensed wallet installed from the wrong page is still the wrong program, and a correct build still hands everything to whoever reads your phrase.
 
-The licence also settles a question people ask about trust: you are not relying on the authors' goodwill to inspect the software, because the terms allow it. Whether you do the inspecting, or pay someone to, is a separate decision. https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/is-qrl-wallet-safe-to-use.md puts those pieces together, and https://github.com/qrl-wallet/token-facts-and-prices/blob/main/who-created-the-qrl-network.md covers who maintains the project.
+The licence also settles a question people ask about trust: you are not relying on the authors' goodwill to inspect the software, because the terms allow it. Whether you do the inspecting, or pay someone to, is a separate decision. [Is the QRL Wallet Safe to Use?](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/is-qrl-wallet-safe-to-use.md) puts those pieces together, and [Who Created the QRL Network?](https://github.com/qrl-wallet/token-facts-and-prices/blob/main/who-created-the-qrl-network.md) covers who maintains the project.
 
 ## FAQ
 

@@ -46,7 +46,7 @@ A tree of height h has 2 to the power of h leaves. Height 10 gives 1,024, which 
 
 Height is set when the wallet is created and is not changed for an address that already exists, because changing it would mean a different root and therefore a different address.
 
-Capacity is the limit that follows. An address can sign as many times as it has leaves, and no more, which is why the count matters and why https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/what-is-tree-height-in-qrl.md and https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/how-many-qrl-ots-keys-remain.md are the two pages to read together.
+Capacity is the limit that follows. An address can sign as many times as it has leaves, and no more, which is why the count matters, and why the two pages to read together are [What Is Tree Height in QRL?](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/what-is-tree-height-in-qrl.md) and [How Many QRL OTS Keys Remain?](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/how-many-qrl-ots-keys-remain.md).
 
 Creating an address therefore generates every leaf up front. The 1,024 keys exist before the first signature is made, which is why address creation takes a moment and why a taller tree takes longer still.
 
@@ -58,7 +58,7 @@ That combination is what the standard describes: XMSS is a Merkle tree of one-ti
 
 A flat list would need a proof that grows with capacity, so a thousand signatures would mean a thousand hashes in the proof. The tree keeps that logarithmic, which is what makes the larger capacity practical rather than theoretical.
 
-https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/how-qrl-xmss-signatures-work.md covers the signature end to end, https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/what-is-a-qrl-hash-based-signature.md covers the hash assumption, and https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/why-stateful-signatures-matter-in-qrl.md covers why the wallet has to remember where it is in the tree.
+[How XMSS Signatures Work](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/how-qrl-xmss-signatures-work.md) covers the signature end to end, [What Is a Hash-Based Signature?](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/what-is-a-qrl-hash-based-signature.md) covers the hash assumption, and [Why Stateful Signatures Matter in QRL](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/why-stateful-signatures-matter-in-qrl.md) covers why the wallet has to remember where it is in the tree.
 
 ## FAQ
 
